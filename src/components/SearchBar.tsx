@@ -15,7 +15,7 @@ export default function SearchBar() {
         p: "2px 4px",
         display: "flex",
         alignItems: "center",
-        minWidth: { md: 600, xs: 400 },
+        minWidth: { md: 600, xs: 300 },
       }}
     >
       <IconButton sx={{ p: "10px" }} aria-label="menu">
