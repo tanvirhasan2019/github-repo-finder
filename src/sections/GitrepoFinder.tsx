@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Stack from "@mui/material/Stack";
 import CircularProgress from "@mui/material/CircularProgress";
 import Typography from "@mui/material/Typography";
@@ -8,7 +8,7 @@ import SearchBar from "../components/SearchBar";
 import GitrepoList from "../components/GitrepoList";
 import { searchRepositories, Repository } from "../services/githubService";
 
-export default function GitrepoFinder() {
+const GitrepoFinder: React.FC = () => {
   const [repositories, setRepositories] = useState<Repository[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -85,4 +85,6 @@ export default function GitrepoFinder() {
       )}
     </Stack>
   );
-}
+};
+
+export default GitrepoFinder;

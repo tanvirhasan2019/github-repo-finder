@@ -1,7 +1,8 @@
+import React from "react";
 import Grid from "@mui/material/Grid";
 import GitrepoFinder from "../sections/GitrepoFinder";
 
-export default function GitrepoFinderPage() {
+const GitrepoFinderPage: React.FC = () => {
   return (
     <div>
       <Grid
@@ -17,4 +18,6 @@ export default function GitrepoFinderPage() {
       </Grid>
     </div>
   );
-}
+};
+
+export default GitrepoFinderPage;
