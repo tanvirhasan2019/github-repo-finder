@@ -1,5 +1,7 @@
+import React from 'react';
 import GitrepoFinder from './pages/GitrepoFinder';
-function App() {
+
+const App: React.FC = () => {
   return (
     <div>
       <GitrepoFinder />
