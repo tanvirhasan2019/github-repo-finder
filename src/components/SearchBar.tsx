@@ -30,7 +30,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
         p: "2px 4px",
         display: "flex",
         alignItems: "center",
-        minWidth: { md: 600, xs: 300 },
+        minWidth: { md: 800, xs: 300 },
       }}
     >
       <IconButton sx={{ p: "10px" }} aria-label="menu">

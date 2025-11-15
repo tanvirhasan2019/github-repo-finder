@@ -34,7 +34,8 @@ export const searchRepositories = async (
   });
 
   if (!response.ok) {
-    throw new Error(`Error: ${response.status}`);
+    const errorData = await response.json();
+    throw new Error(errorData.message || `Error: ${response.status}`);
   }
 
   return response.json();
